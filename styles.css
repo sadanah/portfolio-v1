@@ -17,20 +17,31 @@ body
     --x: 50%;
     --y: 50%;
     --clr: rgb(41, 72, 251);
+    position: relative;
 }
 
-body::before
-{
-    content: '';
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 1000px;
-    background: radial-gradient(var(--clr), transparent, transparent);
-    opacity: 0 ;
-    transition: 0.5s, top 0s, left 0s;
+body::before{
+    content:'';
+    position:fixed;                   
+    top:var(--y);
+    left:var(--x);
+    transform:translate(-50%,-50%);
+    width:600px;
+    height:600px;
+    
+    /* multiple alpha steps for a gentler gradient*/
+    background:radial-gradient(circle at center,
+        rgba(var(--clr-r,0), var(--clr-g,0), var(--clr-b,255), 0.35) 0%,
+        rgba(var(--clr-r,0), var(--clr-g,0), var(--clr-b,255), 0.25) 25%,
+        rgba(var(--clr-r,0), var(--clr-g,0), var(--clr-b,255), 0.15) 45%,
+        rgba(var(--clr-r,0), var(--clr-g,0), var(--clr-b,255), 0.05) 65%,
+        transparent 80%);
+    
+    /* blur softens any remaining bands*/
+    filter: blur(80px);
+    opacity:0.8;
+    transition: opacity .4s ease, transform 0s;
+    z-index:0;
 }
 
 body:hover::before
