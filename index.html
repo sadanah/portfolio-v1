@@ -19,79 +19,84 @@
             </ul>
         </nav>
     </header>
-    <!--Content-->
-    <section id="about">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="about-text">
-                    <h1>Sadana Herath<span id="about-colored">.</span></h1>
-                    <p>I'm a <span id="about-colored">web developer</span> with a passion for creating <span id="about-colored">beautiful</span> and <span id="about-colored">functional</span> websites. I love coding and I'm always looking to learn new things.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="section-break"></div>
-    <section id="work">
-        <div class="row" id="w">
-            <div class="col-md-12">
-                <h1>My Work</h1>
-                <p>Here are some of my recent projects:</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card" style="--clr:#3cf">
-                    <div class="card-content">
-                        <img src="work.png" width="300px" height="200px" alt="work image 1">
-                        <div class="text-wrap">
-                            <h2>Work 1</h2>
-                            <p>This is a brief description of work 1 and related stuff.</p>
-                        </div>
-                    </div>                    
-                </div>
-                <div class="card" style="--clr:#3cf">
-                    <div class="card-content">
-                        <img src="work.png" width="300px" height="200px" alt="work image 1">
-                        <div class="text-wrap">
-                            <h2>Work 2</h2>
-                            <p>This is a brief description of work 2 and related stuff.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="--clr:#3cf">
-                    <div class="card-content">
-                        <img src="work.png" width="300px" height="200px" alt="work image 1">
-                        <div class="text-wrap">
-                            <h2>Work 3</h2>
-                            <p>This is a brief description of work 3 and related stuff.</p>
-                        </div>
+    <div class="page-content">
+        <!--Content-->
+        <section id="about">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-text">
+                        <h1>Sadana Herath<span id="about-colored">.</span></h1>
+                        <p>I'm a <span id="about-colored">web developer</span> with a passion for creating <span id="about-colored">beautiful</span> and <span id="about-colored">functional</span> websites.<br> I love coding and I'm always looking to learn new things.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Contact Me</h1>
-                <p>Email me: <a href="www.gmail.com">sadana.herath@gmail.com</a></p>
-                <div class="contact-options">
-                    <ul>
-                        <li><a href="www.instagram.com">Instagram</a></li>
-                        <li><a href="www.facebook.com">Facebook</a></li>
-                        <li><a href="www.linkedin.com">LinkedIn</a></li>
-                    </ul>
+        </section>
+        <section id="work">
+            <div class="row" id="w">
+                <div class="col-md-12">
+                    <div class="work-header">
+                        <h2>- My Work -</h2>
+                        <p>Here are some of my recent projects:</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card" style="--clr:#3cf">
+                        <div class="card-content">
+                            <img src="work.png" width="300px" height="200px" alt="work image 1">
+                            <div class="text-wrap">
+                                <h3>Work 1</h3>
+                                <p>This is a brief description of work 1 and related stuff.</p>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="card" style="--clr:#3cf">
+                        <div class="card-content">
+                            <img src="work.png" width="300px" height="200px" alt="work image 1">
+                            <div class="text-wrap">
+                                <h3>Work 2</h3>
+                                <p>This is a brief description of work 2 and related stuff.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="--clr:#3cf">
+                        <div class="card-content">
+                            <img src="work.png" width="300px" height="200px" alt="work image 1">
+                            <div class="text-wrap">
+                                <h3>Work 3</h3>
+                                <p>This is a brief description of work 3 and related stuff.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact-content">
+                        <h2>Contact Me</h2>
+                        <p>Email me: <a href="www.gmail.com">sadana.herath@gmail.com</a></p>
+                        <div class="contact-options">
+                            <ul>
+                                <li><a href="www.instagram.com">Instagram</a></li>
+                                <li><a href="www.facebook.com">Facebook</a></li>
+                                <li><a href="www.linkedin.com">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <script>
         let cards = document.querySelectorAll('.card');
         cards.forEach(card => {
             card.onmousemove = function(e){
                 let x = e.pageX - card.offsetLeft;
                 let y = e.pageY - card.offsetTop;
-
+                
                 card.style.setProperty('--x', x + 'px');
                 card.style.setProperty('--y', y + 'px');
             }
