@@ -25,7 +25,8 @@ h2{
 
 h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
+    padding-bottom: 15px;
 }
 
 p{
@@ -86,16 +87,22 @@ header {
     transition: transform .4s;
 }
 
-.about-text h1:hover{
-    transform: skewX(-10deg);
+.work-header h2{
+    transition: transform .4s;
 }
+
+.about-text h1:hover, .work-header h2:hover{
+    transform: skewX(-10deg);
+    text-shadow: 0 0 10px rgba(91, 206, 255, 0.492), 0 0 20px rgba(0, 179, 255, 0.114), 0 0 30px rgba(0, 179, 255, 0.267), 0 0 40px rgba(0, 179, 255, 0.448);
+}
+
 
 #about-colored{
     color: rgb(0, 179, 255);
 }
 
 section{
-    height: 100vh;
+    height: 80vh;
     padding-top: 200px;
 }
 
@@ -158,6 +165,10 @@ section{
     z-index: 1;
 }
 
+.card-content .text-wrap{
+    padding: 20px;
+}
+
 .card-content img {
     width: 180px;      /* slightly smaller */
     height: 180px;
@@ -169,8 +180,8 @@ section{
 }
 
 .contact-content{
-    margin-top: 300px;
-    padding-bottom: 100px;
+    padding-top: 400px;
+    padding-bottom: 50px;
 }
 
 .contact-content h2, .contact-content p{
@@ -184,4 +195,33 @@ section{
     font-size: 18px;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.contact-options ul li{
+    transition: transform .4s;
+}
+
+.contact-options ul li a, .contact-content p a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact-options ul li:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background-color: rgb(98, 98, 98);
+}
+
+footer p{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
 }
