@@ -7,15 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ENjdO4Dr2bkBIFxQpeoYz1HIcje39Wm4jDKdf19U8gI4ddQ3zF86dIHNDz0W1Ank" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qG6L/ZqWUX6N4jwrG+vCUXQctkM5gF9E2nNUazFq1/rrjhO7H0eGp+lFZVxBj1Uu" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
 <body>
     <!--Main Menu-->
     <header>
         <nav class="nav">
             <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#work">work</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,8 +26,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="about-text">
-                        <h1>Sadana Herath<span id="about-colored">.</span></h1>
-                        <p>I'm a <span id="about-colored">web developer</span> with a passion for creating <span id="about-colored">beautiful</span> and <span id="about-colored">functional</span> websites.<br> I love coding and I'm always looking to learn new things.</p>
+                        <h1>Sadana Herath<span id="text-colored">.</span></h1>
+                        <p>I'm a <span id="text-colored">web developer</span> with a passion for creating <span id="text-colored">beautiful</span> and <span id="about-colored">functional</span> websites.<br> I love coding and I'm always looking to learn new things.</p>
+                    </div>
+                    <div class="about-roles-wrapper">
+                        <div class="about-role">Developer</div>
+                        <div class="about-role">Designer</div>
+                        <div class="about-role">Director</div>
                     </div>
                 </div>
             </div>
@@ -35,39 +41,75 @@
             <div class="row" id="w">
                 <div class="col-md-12">
                     <div class="work-header">
-                        <h2>- My Work -</h2>
-                        <p>Here are some of my recent projects:</p>
+                        <h2>Featured Projects<span id="text-colored">.</span></h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="card" style="--clr:#3cf">
-                        <div class="card-content">
-                            <img src="w1.png" width="300px" height="200px" alt="work image 1">
-                            <div class="text-wrap">
+                <div class="col-md-12"> 
+                    <div class="project-item">
+                        <div class="project-title">
+                            <div class="inner-container">
                                 <h3>Fitzone Fitness Center Website</h3>
-                                <p>I developed a responsive website for Fitzone Fitness Center using HTML, CSS, and JavaScript with Bootstrap for styling. It included CRUD functionalities with a MySQL database.</p>
+                            </div> 
+                            <div class="inner-container">
+                                <p>2025</p>
                             </div>
-                        </div>                    
+                            <p>I created a responsive website for a gym center, complete with database functionalities, role-based navigation, and user dashboards.</p>
+                        </div>
+                        <div class="skill-items">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                        <hr>
                     </div>
-                    <div class="card" style="--clr:#3cf">
-                        <div class="card-content">
-                            <img src="w2.jpg" width="300px" height="200px" alt="work image 1">
-                            <div class="text-wrap">
+                    <div class="project-item">
+                        <div class="project-title">
+                            <div class="inner-container">
                                 <h3>LuxeVista Hotels App</h3>
-                                <p>I created a mobile app for LuxeVista Hotels using Android Studio and SQLite for the database. The app allows users to book rooms, view amenities, and manage their reservations.</p>
                             </div>
+                            <div class="inner-container">
+                                <p>2025</p>
+                            </div>
+                            <p>I created a mobile app for LuxeVista Hotels using Android Studio and SQLite. The app allows users to book rooms, view amenities, and manage their reservations.</p>
                         </div>
+                        <div class="skill-items">
+                            <ul>
+                                <li>Java</li>
+                                <li>XML</li>
+                                <li>Android Studio</li>
+                                <li>SQLite</li>
+                                <li>UI/UX</li>
+                            </ul>
+                        </div>
+                        <hr>
                     </div>
-                    <div class="card" style="--clr:#3cf">
-                        <div class="card-content">
-                            <img src="w3.png" width="300px" height="200px" alt="work image 1">
-                            <div class="text-wrap">
+                    <div class="project-item">
+                        <div class="project-title">
+                            <div class="inner-container">
                                 <h3>SM Post Design for Thriya Lanka</h3>
-                                <p>I designed a series of social media posts for Thriya Lanka, focusing on promoting their brand and services. The project involved creating visually appealing graphics and writing engaging captions.</p>
                             </div>
+                            <div class="inner-container">
+                                <p>2024</p>
+                            </div>
+                            <p>I designed a series of social media posts for Thriya Lanka, focusing on branding and service promotion. This involved graphic design and writing engaging content for platforms like Instagram and Facebook.</p>
                         </div>
+                        <div class="skill-items">
+                            <ul>
+                                <li>Canva</li>
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>Content Writing</li>
+                                <li>Social Media Marketing</li>
+                            </ul>
+                        </div>
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -76,31 +118,23 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="contact-content">
-                        <h2>Contact Me</h2>
-                        <p>Email me: &nbsp;<a href="mailto:sadana.herath@gmail.com">sadana.herath@gmail.com</a></p>
+                        <h2>Contact Me<span id="text-colored">.</span></h2>
+                        <p>Let's have a chat if you're looking to work with me, coffee chat, <br>or debate Star Wars politics :D</p>
+                        <div class="contact-email"><p><span class="iconify" data-icon="akar-icons:arrow-right" data-inline="true"></span> &nbsp Email me: &nbsp;<a href="mailto:sadana.herath@gmail.com">sadana.herath@gmail.com</a></p></div>
                         <div class="contact-options">
                             <ul>
-                                <li><a href="https://www.instagram.com/sadanaherath/">Instagram</a></li>
-                                <li><a href="https://www.facebook.com/sadanaherath/">Facebook</a></li>
-                                <li><a href="https://www.linkedin.com/in/sadana-herath-b686b4218/">LinkedIn</a></li>
+                                <li><span class="iconify" data-icon="akar-icons:arrow-right" data-inline="true"></span><a href="https://www.instagram.com/sadanaherath/">&nbsp Instagram</a></li>
+                                <li><span class="iconify" data-icon="akar-icons:arrow-right" data-inline="true"></span><a href="https://www.facebook.com/sadanaherath/">&nbsp Facebook</a></li>
+                                <li><span class="iconify" data-icon="akar-icons:arrow-right" data-inline="true"></span><a href="https://www.linkedin.com/in/sadana-herath-b686b4218/">&nbsp LinkedIn</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <p>Copyright &copy; Sadana Herath 2025</p>
+        </footer>
     </div>
-    <script>
-        let cards = document.querySelectorAll('.card');
-        cards.forEach(card => {
-            card.onmousemove = function(e){
-                let x = e.pageX - card.offsetLeft;
-                let y = e.pageY - card.offsetTop;
-                
-                card.style.setProperty('--x', x + 'px');
-                card.style.setProperty('--y', y + 'px');
-            }
-        });
-    </script>
 </body>
 </html>
