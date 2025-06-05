@@ -139,25 +139,15 @@ header {
 }
 
 section{
-    height: 1000px;
     padding-top: 100px;
 }
 
 section:first-child{
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
-section:nth-child(2), section:nth-child(4){
-    margin-top: -400px;
-}
-
-section:nth-child(3){
-    margin-top: -150px;
-}
-
-section:nth-child(5){
-    height: 370px;
-    margin-top: -150px;
+section:nth-child(2){
+    padding-bottom: 100px;
 }
 
 .work-header h2, .work-header p{
