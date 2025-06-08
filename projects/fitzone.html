@@ -8,15 +8,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qG6L/ZqWUX6N4jwrG+vCUXQctkM5gF9E2nNUazFq1/rrjhO7H0eGp+lFZVxBj1Uu" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="project-styles.css">
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".project-images img");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    images.forEach((img) => {
+      observer.observe(img);
+    });
+  });
+</script>
 <body>
     <!--Main Menu-->
     <header>
         <nav class="nav">
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -28,12 +44,41 @@
                 <div class="col-md-12">
                     <div class="about-text">
                         <h1>Fitzone Fitness Center<span id="text-colored">.</span></h1>
+                        <br><br>
+                        <div class="skill-items">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
                         <br><br><br><br>
                         <p>The website is designed to provide users with a comprehensive platform for all their fitness needs. From workout plans to nutrition guides. It includes user signups and schedule as well as admin dashboards hosted on local database server.</p>
-                        <br><br><br><br>
+                        <br><br>
+                        <div class="project-links">
+                            <a href="https://github.com/sadanah/website-ffc" target="_blank"><span class="iconify" height="24" data-icon="simple-icons:github" data-inline="true"></span>&nbsp; &nbsp; Github</a>
+                            <a href="https://vercel.com/sadanahs-projects/website-ffc" target="_blank"><span class="iconify" height="24" data-icon="simple-icons:vercel" data-inline="true"></span>&nbsp; &nbsp; Vercel</a>
+                        </div>
+                        <br><br><br>
+                        <div class="project-images">
                             <center><img src="/projects/res/fitzone.png" alt="Fitzone Fitness Center" class="img-fluid" height="300"></center>
+                        </div>
                         <br><br><br><br>
                         <p>It is built using HTML, CSS, and JavaScript, with a focus on responsive design to ensure a seamless experience across devices. The website features a clean and modern layout, making it easy for users to navigate and find the information they need.</p>
+                        <br><br>
+                        <p>Features:</p>
+                        <ul>
+                            <li>Multiple webpages for information.</li>
+                            <li>User authentication and signup.</li>
+                            <li>Role-based navigation within pages.</li>
+                            <li>Role-based dashboards: admin, staff, customer.</li>
+                            <li>Dynamic table population.</li>
+                            <li>Database CRUD operations in admin dashboard.</li>
+                            <li>Responsive design for all devices.</li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -142,14 +142,6 @@ section{
     padding-top: 100px;
 }
 
-section:first-child{
-    padding-top: 150px;
-}
-
-section:nth-child(2){
-    padding-bottom: 100px;
-}
-
 .work-header h2, .work-header p{
     display: flex;
     justify-content: left;
@@ -164,23 +156,19 @@ section:nth-child(2){
     margin-top: 50px;
 }
 
-.inner-container{
-    display: inline-flex;
-    margin-right: 15px;
-}
-
-.skill-items{
+.about-text .skill-items{
     display: flex;
-    justify-content: flex-start;
-    margin-right: 10%;
-    margin-top: 15px;
+    flex-direction: column;
+    margin: 20px 0;
+    margin-left: -15px;
+    margin-bottom: -20px;
 }
 
-.skill-items ul {
+.about-text .skill-items ul {
     display: flex;
 }
 
-.skill-items ul li{
+.about-text .skill-items ul li{
     list-style: none;
     margin-right: 1rem;
     font-size: 16px;
@@ -190,13 +178,8 @@ section:nth-child(2){
     border-radius: 20px;
 }
 
-.skill-items ul li:last-child{
+.about-text .skill-items ul li:last-child{
     margin-right: 0;
-}
-
-.project-item hr{
-    margin-top: 35px;
-    border: 1px solid #404040;
 }
 
 .contact-content h2, .contact-content p{
@@ -256,3 +239,59 @@ footer p{
 .project-item .project-title .inner-container h3 a:hover{
     color: #ffffff;
 }
+
+.project-links{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.project-links a{
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+    font-size: 20px;
+    margin: auto;
+    transition: color 0.5s;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.project-images img {
+    border-radius: 12px;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0 0 15px rgba(161, 161, 161, 0.1);
+    transform: scale(1);
+    opacity: 0.2;
+    transition: transform 1s ease, opacity 2s ease;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Visible state */
+.project-images img.in-view {
+    opacity: 1;
+    transform: scale(1);
+}
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    /* Centering */
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text ul{
+    padding-top: 10px;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    padding-left: 50px;
+}
+
+.about-text ul li{
+    padding-top: 10px;
+}
+
