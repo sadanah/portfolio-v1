@@ -100,6 +100,23 @@ section {
   padding: 150px 0;
 }
 
+section:first-child{
+    padding-top: 200px;
+}
+
+section:nth-child(2), section:nth-child(4){
+    margin-top: -150px;
+}
+
+section:nth-child(3){
+    margin-top: -150px;
+}
+
+section:nth-child(5){
+    height: 370px;
+    margin-top: -150px;
+}
+
 .about-roles-wrapper {
   display: flex;
   justify-content: space-between;
@@ -390,4 +407,58 @@ h1:hover,
     margin: 10px 0;
     font-size: 18px;
   }
+
+  .project-images img {
+    max-width: 325px !important;
+    height: auto;
+  }
+}
+
+.project-links{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.project-links a{
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+    font-size: 20px;
+    margin: auto;
+    transition: color 0.5s;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.project-images img {
+    border-radius: 12px;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0 0 15px rgba(161, 161, 161, 0.1);
+    transform: scale(1);
+    opacity: 0.2;
+    transition: transform 1s ease, opacity 2s ease;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Visible state */
+.project-images img.in-view {
+    opacity: 1;
+    transform: scale(1);
+}
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    /* Centering */
+    justify-content: center;
+    align-items: center;
+}
+
+.project-features ul{
+    margin-top: 10px;
+    margin-left: 40px;
 }
