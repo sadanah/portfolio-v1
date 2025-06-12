@@ -13,12 +13,18 @@
     <!--Main Menu-->
     <header>
         <nav class="nav">
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="mobileMenu">
                 <li><a href="#about">About</a></li>
-                <li><a href="#work">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
     </header>
     <div class="page-content">
         <!--Content-->
@@ -26,8 +32,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="about-text">
-                        <h1>Sadana Herath<span id="text-colored">.</span></h1>
-                        <p>I'm a <span id="text-colored">web developer</span> with a passion for creating <span id="text-colored">beautiful</span> and <span id="about-colored">functional</span> websites.<br> I love coding and I'm always looking to learn new things.</p>
+                        <h1>Sadana Herath<span id="text-colored"></span></h1>
+                        <p>I'm a <span id="about-colored">web developer</span> with a passion for creating <span id="about-colored">beautiful</span> and <span id="about-colored">functional</span> websites.<br> I love coding and I'm always looking to learn new things.</p>
                     </div>
                     <div class="about-roles-wrapper">
                         <div class="about-role">Developer</div>
@@ -41,7 +47,7 @@
             <div class="row" id="w">
                 <div class="col-md-12">
                     <div class="work-header">
-                        <h2>Featured Projects<span id="text-colored">.</span></h2>
+                        <h2>Featured Projects<span id="text-colored"></span></h2>
                     </div>
                 </div>
             </div>
@@ -102,9 +108,7 @@
                         </div>
                         <div class="skill-items">
                             <ul>
-                                <li>Canva</li>
                                 <li>Photoshop</li>
-                                <li>Illustrator</li>
                                 <li>Copywriting</li>
                                 <li>Marketing</li>
                             </ul>
@@ -118,7 +122,7 @@
             <div class="row" id="w">
                 <div class="col-md-12">
                     <div class="work-header">
-                        <h2>Work Experience<span id="text-colored">.</span></h2>
+                        <h2>Work Experience<span id="text-colored"></span></h2>
                     </div>
                 </div>
             </div>
@@ -132,7 +136,7 @@
                             <div class="inner-container">
                                 <p>06/2024 - 12/2024</p>
                             </div>
-                            <p>My role involves designing and managing social media posts, engaging with online customers, and collaborating with the team to maintain a cohesive vision. I work closely with the marketing team to analyze social media metrics, create compelling content, and use management tools for scheduling and monitoring engagement.</p>
+                            <p>My role involved designing and managing social media posts, engaging with online customers, and collaborating with the team to maintain a cohesive vision. I work closely with the marketing team to analyze social media metrics, create compelling content, and use management tools for scheduling and monitoring engagement.</p>
                         </div>
                         <hr>
                     </div>
@@ -155,7 +159,7 @@
             <div class="row" id="w">
                 <div class="col-md-12">
                     <div class="work-header">
-                        <h2>Education<span id="text-colored">.</span></h2>
+                        <h2>Education<span id="text-colored"></span></h2>
                     </div>
                 </div>
             </div>
@@ -204,11 +208,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="contact-content">
-                        <h2>Contact Me<span id="text-colored">.</span></h2>
+                        <h2>Contact Me<span id="text-colored"></span></h2>
                         <p>Let's have a chat if you're looking to work with me, coffee chat, <br>or debate Star Wars politics :D</p>
-                        <div class="contact-email"><p><span class="iconify" data-icon="akar-icons:arrow-right" data-inline="true"></span> &nbsp Email me: &nbsp;<a href="mailto:sadana.herath@gmail.com">sadana.herath@gmail.com</a></p></div>
+                        <br><br>
                         <div class="contact-options">
                             <ul>
+                                <li><span class="iconify" data-icon="akar-icons:arrow-right" data-inline="true"></span> &nbsp Email me: &nbsp;<a href="mailto:sadana.herath@gmail.com">sadana.herath@gmail.com</a></li>
                                 <li><span class="iconify" data-icon="akar-icons:arrow-right" data-inline="true"></span><a href="https://www.instagram.com/sadanaherath/">&nbsp Instagram</a></li>
                                 <li><span class="iconify" data-icon="akar-icons:arrow-right" data-inline="true"></span><a href="https://www.facebook.com/sadanaherath/">&nbsp Facebook</a></li>
                                 <li><span class="iconify" data-icon="akar-icons:arrow-right" data-inline="true"></span><a href="https://www.linkedin.com/in/sadana-herath-b686b4218/">&nbsp LinkedIn</a></li>
@@ -223,4 +228,14 @@
         </footer>
     </div>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  });
+</script>
 </html>
